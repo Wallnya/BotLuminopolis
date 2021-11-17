@@ -8,7 +8,8 @@ Le serveur existe depuis janvier 2020. Je suis l'heureuse fondatrice depuis juin
 ## _Caractéristiques du bot_
 
 Le principe du bot ***Twinkle Twinkle*** est de proposer des challenges. Une liste de question est prédéfinie pour ne plus à avoir y penser chaque semaine.  
-L'intérêt est donc de gagner du temps pour que la fondatrice puisse faire d'autres choses.
+L'intérêt est donc de gagner du temps pour que la fondatrice puisse faire d'autres choses.  
+Le bot est herbergé sur [Heroku](https://www.heroku.com).
 
 ## _Les différentes commandes_
 
@@ -19,3 +20,8 @@ L'intérêt est donc de gagner du temps pour que la fondatrice puisse faire d'au
 > ***!challengeNumero n*** pour obtenir une question bien précise où n désigne un chiffre compris entre 0 et 11
 
 > ***!challengeAleatoire*** pour obtenir une question aléatoire dans la liste disponible
+
+## _Améliorations possibles_
+
+* Prendre les défis à partir d'un fichier excel ou bien d'un google sheet partagé.  
+* Le challenge se lance toutes les semaines (non compatible avec Heroku)
