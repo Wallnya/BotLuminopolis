@@ -12,9 +12,8 @@ ANNONCE = os.getenv('DISCORD_ANNONCE')
 #Variables
 bot = commands.Bot(command_prefix = "!",description ="Bot lumino test")
 
-list_OriginalQuestions = ["```Pour ou contre les uniformes scolaires ?```","```Sommes-nous dépendants des ordinateurs?```","```Faut-il obligatoirement être un esprit torturé pour être un grand artiste ?```","```Pourquoi les gens aiment-ils regarder des vidéos de chats amusantes ?```","```Quel serait ton animal totem ?```","```Si tu pouvais poser une question à Dieu, laquelle serait-elle ?```","```Montre nous ta dernière création artistique de la semaine !```","```C'est la semaine du complimet alors n'hésitez pas à complimenter votre prochain sur le serveur!```","```Quel plat pourrais-tu manger sans t'en lasser ?```","```Plutôt soleil ou plutôt pluie ? ```","```La question de l'écologie est importante pour vous ?```"]
+list_OriginalQuestions = ["```Pour ou contre les uniformes scolaires ?```","```Sommes-nous dépendants des ordinateurs?```","```Faut-il obligatoirement être un esprit torturé pour être un grand artiste ?```","```Quel serait ton animal totem ?```","```Si tu pouvais poser une question à Dieu, laquelle serait-elle ?```","```Montre nous ta dernière création artistique de la semaine !```","```C'est la semaine du complimet alors n'hésitez pas à complimenter votre prochain sur le serveur!```","```Quel plat pourrais-tu manger sans t'en lasser ?```","```La question de l'écologie est importante pour vous ?```"]
 list_QuestionsAsked = list_OriginalQuestions
-regles = "```Les règles sont simples : toujours répondre à la question qui est posée ou le défi. On ne joue pas les demi-mesures et on répond par oui ou par non quand le besoin y est! \nJe compte sur vous pour ramener à la vie ce petit channel qui n'attend que vos réponses!```"
 
 #Event de lancement
 @bot.event
@@ -41,6 +40,6 @@ async def challengeNumero(ctx, *, indice):
 
 @bot.command()
 async def regles(ctx):
-	await ctx.send(regles)
+	await ctx.send("```Les règles sont simples : toujours répondre à la question qui est posée ou le défi. On ne joue pas les demi-mesures et on répond par oui ou par non quand le besoin y est! \nJe compte sur vous pour ramener à la vie ce petit channel qui n'attend que vos réponses!```")
 
 bot.run(TOKEN)
